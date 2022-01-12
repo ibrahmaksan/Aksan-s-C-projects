@@ -29,8 +29,7 @@ int main() {
     uzunluk1 = strlen(dizi1);
     uzunluk2 = strlen(dizi2);
 
-    char* kopya1 = (char*)malloc(strlen(dizi1)); // bu dizileri malloc ile olusturmamizin sebebi degisken olmalarini istememden kaynakli.
-    //Degisken olmazlarsa bu dizilerin (statik olurlarsa yani) boyutunu degistiremem. Fonksiyonda isleme sokmam zorlaşır.
+    char* kopya1 = (char*)malloc(strlen(dizi1)); 
     char* kopya2  = (char*)malloc(strlen(dizi2)+1);
 
     strcpy(kopya1,dizi1);
